@@ -14,6 +14,13 @@
 		484B806E22DF6E8200DE048B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484B806C22DF6E8200DE048B /* LaunchScreen.storyboard */; };
 		484B807922DF6E8200DE048B /* WizelineXCUITest101Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B807822DF6E8200DE048B /* WizelineXCUITest101Tests.swift */; };
 		484B808422DF6E8200DE048B /* WizelineXCUITest101UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B808322DF6E8200DE048B /* WizelineXCUITest101UITests.swift */; };
+		484B809222DF7EAE00DE048B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B809122DF7EAE00DE048B /* LoginViewController.swift */; };
+		484B809422DF7EF000DE048B /* LandingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B809322DF7EF000DE048B /* LandingScreenViewController.swift */; };
+		484B809622DF7F3700DE048B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B809522DF7F3700DE048B /* TableViewController.swift */; };
+		484B809C22DFA61A00DE048B /* StartingScreenElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B809B22DFA61A00DE048B /* StartingScreenElements.swift */; };
+		484B809E22DFA63F00DE048B /* TrainingAppWizeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B809D22DFA63F00DE048B /* TrainingAppWizeline.swift */; };
+		484B80A022DFA66500DE048B /* LandingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B809F22DFA66500DE048B /* LandingTest.swift */; };
+		484B80A222DFA68000DE048B /* StartingScreenSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B80A122DFA68000DE048B /* StartingScreenSteps.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		484B807F22DF6E8200DE048B /* WizelineXCUITest101UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WizelineXCUITest101UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		484B808322DF6E8200DE048B /* WizelineXCUITest101UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WizelineXCUITest101UITests.swift; sourceTree = "<group>"; };
 		484B808522DF6E8200DE048B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		484B809122DF7EAE00DE048B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		484B809322DF7EF000DE048B /* LandingScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingScreenViewController.swift; sourceTree = "<group>"; };
+		484B809522DF7F3700DE048B /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		484B809B22DFA61A00DE048B /* StartingScreenElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingScreenElements.swift; sourceTree = "<group>"; };
+		484B809D22DFA63F00DE048B /* TrainingAppWizeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingAppWizeline.swift; sourceTree = "<group>"; };
+		484B809F22DFA66500DE048B /* LandingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingTest.swift; sourceTree = "<group>"; };
+		484B80A122DFA68000DE048B /* StartingScreenSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingScreenSteps.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +117,9 @@
 				484B806A22DF6E8200DE048B /* Assets.xcassets */,
 				484B806C22DF6E8200DE048B /* LaunchScreen.storyboard */,
 				484B806F22DF6E8200DE048B /* Info.plist */,
+				484B809122DF7EAE00DE048B /* LoginViewController.swift */,
+				484B809322DF7EF000DE048B /* LandingScreenViewController.swift */,
+				484B809522DF7F3700DE048B /* TableViewController.swift */,
 			);
 			path = WizelineXCUITest101;
 			sourceTree = "<group>";
@@ -119,10 +136,46 @@
 		484B808222DF6E8200DE048B /* WizelineXCUITest101UITests */ = {
 			isa = PBXGroup;
 			children = (
+				484B809922DFA5E300DE048B /* Base */,
+				484B809A22DFA5EA00DE048B /* XCUIElements */,
+				484B809822DFA5D200DE048B /* Tests */,
+				484B809722DFA5CB00DE048B /* Steps */,
 				484B808322DF6E8200DE048B /* WizelineXCUITest101UITests.swift */,
 				484B808522DF6E8200DE048B /* Info.plist */,
 			);
 			path = WizelineXCUITest101UITests;
+			sourceTree = "<group>";
+		};
+		484B809722DFA5CB00DE048B /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+				484B80A122DFA68000DE048B /* StartingScreenSteps.swift */,
+			);
+			path = Steps;
+			sourceTree = "<group>";
+		};
+		484B809822DFA5D200DE048B /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				484B809F22DFA66500DE048B /* LandingTest.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		484B809922DFA5E300DE048B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				484B809D22DFA63F00DE048B /* TrainingAppWizeline.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		484B809A22DFA5EA00DE048B /* XCUIElements */ = {
+			isa = PBXGroup;
+			children = (
+				484B809B22DFA61A00DE048B /* StartingScreenElements.swift */,
+			);
+			path = XCUIElements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +309,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				484B809422DF7EF000DE048B /* LandingScreenViewController.swift in Sources */,
+				484B809222DF7EAE00DE048B /* LoginViewController.swift in Sources */,
 				484B806622DF6E8100DE048B /* ViewController.swift in Sources */,
+				484B809622DF7F3700DE048B /* TableViewController.swift in Sources */,
 				484B806422DF6E8100DE048B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +329,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				484B80A222DFA68000DE048B /* StartingScreenSteps.swift in Sources */,
+				484B809C22DFA61A00DE048B /* StartingScreenElements.swift in Sources */,
+				484B80A022DFA66500DE048B /* LandingTest.swift in Sources */,
+				484B809E22DFA63F00DE048B /* TrainingAppWizeline.swift in Sources */,
 				484B808422DF6E8200DE048B /* WizelineXCUITest101UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,14 +492,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76YT6NVG22;
 				INFOPLIST_FILE = WizelineXCUITest101/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = JorgeOrduno.WizelineXCUITest101;
+				PRODUCT_BUNDLE_IDENTIFIER = Jorge2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -449,14 +512,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76YT6NVG22;
 				INFOPLIST_FILE = WizelineXCUITest101/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = JorgeOrduno.WizelineXCUITest101;
+				PRODUCT_BUNDLE_IDENTIFIER = Jorge2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

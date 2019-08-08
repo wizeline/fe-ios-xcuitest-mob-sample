@@ -21,6 +21,5 @@ enum LandingElements: String {
         case .buttonLetsStart:
             return XCUIApplication().buttons[self.rawValue]
         }
-    
     }
 }

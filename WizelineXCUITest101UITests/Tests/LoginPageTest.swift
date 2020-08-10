@@ -18,7 +18,6 @@ final class TestLoginScreen: Base {
         thenIShouldSeeNameTextField()
         thenIEnterUsernameAndPassword(name: "Jorge", password: "Orduno")
         whenITapIntoLoginButton()
-        
     }
 }
 

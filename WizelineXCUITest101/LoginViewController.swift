@@ -15,14 +15,21 @@ class LoginViewController: ViewController {
     
     @IBAction func buttonLogin(_ sender: UIButton) {
     }
+    
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//           view.endEditing(true)
+//       }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
     }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let landingScreen = (segue.destination as? UINavigationController)?.topViewController as? LandingScreenViewController {
             landingScreen.username = textFieldName.text
             landingScreen.password = textFieldPassword.text
         }
     }
+    
 }

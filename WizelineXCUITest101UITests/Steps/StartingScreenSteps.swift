@@ -16,7 +16,7 @@ extension Base {
     /// This function help us to be sure that the app is was builded correctly
     func givenAppIsReady() {
         XCTContext.runActivity(named: "Given App is Ready") {_ in
-            XCTAyncAssert(LandingElements.staticTextWelcomeTitle.element)
+            XCTAsyncAssert(LandingElements.staticTextWelcomeTitle.element)
             XCTAssert(LandingElements.buttonLetsStart.element.exists)
         }
     }
@@ -34,7 +34,7 @@ extension Base {
     /// This function taps into the lest start button
     func whenITapIntoLetsStartButton() {
         XCTContext.runActivity(named: "When i tap into Lets start button") {_ in
-            XCTAyncAssert(LandingElements.staticTextWelcomeTitle.element)
+            XCTAsyncAssert(LandingElements.staticTextWelcomeTitle.element)
             LandingElements.buttonLetsStart.element.tap()
         }
     }
@@ -42,7 +42,7 @@ extension Base {
     /// This function help us to validate that we are in the login screen and the name textfield it is displayed
     func thenIShouldSeeNameTextField() {
         XCTContext.runActivity(named: "Then i should see the name text field") {_ in
-            XCTAyncAssert(LoginScreenElements.textFieldName.element)
+            XCTAsyncAssert(LoginScreenElements.textFieldName.element)
             XCTAssert(LoginScreenElements.textFieldName.element.exists)
         }
     }

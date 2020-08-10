@@ -23,10 +23,15 @@ class LandingScreenViewController: ViewController {
     @IBAction func buttonAdd(_ sender: UIButton) {
     }
     
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        view.endEditing(true)
+//    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         labelUsername.text = "Your name is: \(username!)"
         labelPassword.text = "Your password is: \(password!)"
+        self.hideKeyboardWhenTappedAround()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

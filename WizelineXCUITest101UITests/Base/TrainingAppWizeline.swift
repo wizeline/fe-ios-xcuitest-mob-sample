@@ -25,7 +25,7 @@ class Base: XCTestCase {
     /// This function help us to establish to create a wait for exist, and many other waits
     ///
     /// - Parameter element: The element passed is of type XCUIElement
-    func XCTAyncAssert(_ element: XCUIElement) {
+    func XCTAsyncAssert(_ element: XCUIElement) {
         let isElementExist = element.waitForExistence(timeout: 5)
         
         if isElementExist {

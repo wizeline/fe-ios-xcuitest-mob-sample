@@ -14,6 +14,7 @@ enum LoginScreenElements: String {
     case textFieldName = "Name"
     case textFieldPassword = "Password"
     case buttonLogin = "Login"
+    case imageTitleWizeline = "WizelineTitle"
     
     var element: XCUIElement {
         switch self {
@@ -22,6 +23,8 @@ enum LoginScreenElements: String {
             return XCUIApplication().textFields[self.rawValue]
         case .buttonLogin:
             return XCUIApplication().buttons[self.rawValue]
+        case .imageTitleWizeline:
+            return XCUIApplication().images[self.rawValue]
         }
     }
 }
